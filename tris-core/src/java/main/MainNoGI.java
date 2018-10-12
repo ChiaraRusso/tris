@@ -28,5 +28,7 @@ public class MainNoGI {
 
     }
 
+    private void printPositionAvailable(Boolean[][] field){
 
+    }
 }
