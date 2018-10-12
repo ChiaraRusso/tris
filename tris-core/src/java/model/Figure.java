@@ -2,20 +2,20 @@ package java.model;
 
 public class Figure {
 
-    private String x;
-    private String y;
+    private Integer x;
+    private Integer y;
     private Boolean isCircle;
 
-    public String getX() {
+    public Integer getX() {
         return x;
     }
-    public void setX( final String x ) {
+    public void setX( final Integer x ) {
         this.x = x;
     }
-    public String getY() {
+    public Integer getY() {
         return y;
     }
-    public void setY( final String y ) {
+    public void setY( final Integer y ) {
         this.y = y;
     }
     public Boolean getCircle() {
