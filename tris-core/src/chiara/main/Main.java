@@ -1,4 +1,4 @@
-package java.main;
+package chiara.main;
 
 import javafx.application.Application;
 import javafx.stage.Stage;

@@ -1,10 +1,9 @@
-package java.model;
+package chiara.model;
 
-public class Figure {
+public class Cross implements Figure{
 
     private Integer x;
     private Integer y;
-    private Boolean isCircle;
 
     public Integer getX() {
         return x;
@@ -18,10 +17,13 @@ public class Figure {
     public void setY( final Integer y ) {
         this.y = y;
     }
-    public Boolean getCircle() {
-        return isCircle;
+
+    public Cross x( Integer x ) {
+        this.x = x;
+        return this;
     }
-    public void setCircle( final Boolean circle ) {
-        isCircle = circle;
+    public Cross y( Integer y ) {
+        this.y = y;
+        return this;
     }
 }
