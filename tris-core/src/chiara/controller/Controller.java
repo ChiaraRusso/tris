@@ -1,9 +1,6 @@
 package chiara.controller;
 
 
-import chiara.model.Circle;
-import chiara.model.Cross;
-
 public class Controller {
 
     public static final Integer DIM = 3;
@@ -36,7 +33,6 @@ public class Controller {
         }
 
     }
-
 
     public void printMatrix() {
 
