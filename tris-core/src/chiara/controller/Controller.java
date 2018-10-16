@@ -20,13 +20,13 @@ public class Controller {
     }
 
     // x and y are the position you want to go
-    public void move( final String [][] field,final String player, final Integer x, final Integer y ) {
+    public void move( final String player, final int x, final int y ) {
 
         for ( int i = 0; i < DIM; i++ ) {
             for ( int j = 0; j < DIM; j++ ) {
                 if ( i == x ) {
                     if ( j == y ) {
-                        if (field[ x ][ y ].equals( "" ) ) {
+                        if ( field[ x ][ y ].equals( "" ) ) {
                             field[ x ][ y ] = player;
                         } else
                             System.out.println( "Position is already occupied" );
@@ -40,18 +40,22 @@ public class Controller {
 
     public void printMatrix() {
 
-        for ( int i = 0; i < DIM; i++ ) {
-            for ( int j = 0; j < DIM; j++ )
-                System.out.println( field[ i ][ j ] );
-            System.out.println();
-        }
+        System.out.println();
+        System.out.println( "  0   1   2" );
+        System.out.println();
+        System.out.println( "0  " + field[ 0 ][ 0 ] + "  |" + field[ 0 ][ 1 ] + "|" + field[ 0 ][ 2 ] );
+        System.out.println( "  ----------" );
+        System.out.println( "1  " + field[ 1 ][ 0 ] + "  |" + field[ 1 ][ 1 ] + "|" + field[ 1 ][ 2 ] );
+        System.out.println( "  ----------" );
+        System.out.println( "2  " + field[ 2 ][ 0 ] + "  |" + field[ 2 ][ 1 ] + "|" + field[ 2 ][ 2 ] );
+        System.out.println();
     }
 
-    public void printAvailablePositions(){
-        for(int i=0; i<DIM; i++){
-            for(int j=0; j<DIM; j++)
-            {
-                System.out.println("("+i+"-"+j+")");
+    public void printAvailablePositions() {
+        for ( int i = 0; i < DIM; i++ ) {
+            for ( int j = 0; j < DIM; j++ ) {
+                if ( field[ i ][ j ].equals( "" ) )
+                    System.out.println( "(" + i + "-" + j + ")" );
             }
         }
     }
