@@ -52,11 +52,12 @@ public class Controller {
 
     }
 
-    public void printAvailablePositions() {
+    public void printAvailablePositions(Thread t) throws InterruptedException {
         for ( int i = 0; i < DIM; i++ ) {
             for ( int j = 0; j < DIM; j++ ) {
-                if ( field[ i ][ j ].equals( " " ) )
-                    System.out.println( "(" + i + "-" + j + ")" );
+                if ( field[ i ][ j ].equals( " " ) ){
+                    t.sleep( 500 );
+                    System.out.println( "(" + i + "-" + j + ")" );}
             }
         }
     }
