@@ -18,8 +18,7 @@ public class MainNoGI {
 
     public static void main( String[] args ) throws Exception {
 
-        SimpleRunner sr = new SimpleRunner();
-        Thread t = new Thread( sr );
+        Thread t = Thread.currentThread();
 
         controller = new Controller();
         aiController = new AIController();
@@ -50,18 +49,19 @@ public class MainNoGI {
         }
         t.sleep( 500 );
         System.out.println( "Congratulation, you picked the " + player + "!" +
-                "Your opponent will play with the " + opponent );
+                " Your opponent will play with the " + opponent );
         System.out.println();
-        t.sleep( 900 );
+        System.out.println();
+        t.sleep( 950 );
         System.out.println( "~~~~~~~ Ready to play? ~~~~~~~" );
         System.out.println();
         t.sleep( 2000 );
 
-        for ( int i = 0; i < 3; i++ ) {
+        while ( controller.arePositionsAvaliable() ) {
 
-            System.out.println( "Here the positions available:" );
+            System.out.println( "Here the positions available: ( X - Y )" );
+            System.out.println();
             t.sleep( 500 );
-            System.out.println( " X-Y " );
             controller.printAvailablePositions( t );
             t.sleep( 500 );
             controller.printMatrix();
@@ -81,6 +81,12 @@ public class MainNoGI {
             if ( controller.move( player, x, y ) ) {
                 t.sleep( 700 );
                 controller.printMatrix();
+
+                if ( controller.win( player ) ) {
+//                    controller.printMatrix();
+                    System.out.println( "Congratulation " + name + ", you won!" );
+                    return;
+                }
             } else {
                 while ( !controller.move( player, x, y ) ) {
                     System.out.println();
@@ -91,6 +97,12 @@ public class MainNoGI {
                     x = in.nextInt();
                     System.out.println( "Enter your Y position:" );
                     y = in.nextInt();
+
+                    if ( controller.win( player ) ) {
+//                        controller.printMatrix();
+                        System.out.println( "Congratulation " + name + ", you won!" );
+                        return;
+                    }
                 }
                 t.sleep( 700 );
                 controller.printMatrix();
@@ -98,14 +110,19 @@ public class MainNoGI {
 
             System.out.println();
             t.sleep( 500 );
-            System.out.println( "--- opponent move ---" );
+            System.out.println( "--- opponent's move ---" );
             System.out.println();
             t.sleep( 1500 );
             aiController.generateOpponentPosition( controller.getField(), opponent );
+            if ( controller.win( opponent ) ) {
+                controller.printMatrix();
+                System.out.println( "Uh-oh.. You lost :(" );
+                return;
+            }
             controller.printMatrix();
-            if(controller.win( player ) || controller.win( opponent ))
-                System.out.println("WON");
         }
+
+        System.out.println( "I guess this game ended in a draw!" );
 
     }
 
@@ -122,12 +139,4 @@ public class MainNoGI {
     }
 
 
-}
-
-class SimpleRunner implements Runnable {
-
-    @Override
-    public void run() {
-
-    }
 }

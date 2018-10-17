@@ -1,10 +1,6 @@
 package chiara.controller;
 
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
-import java.awt.*;
-
 public class Controller {
 
     public static final Integer DIM = 3;
@@ -137,6 +133,16 @@ public class Controller {
         }
         if ( c == 3 )
             return true;
+        return false;
+    }
+
+    public Boolean arePositionsAvaliable(){
+        for(int i=0; i<DIM; i++){
+            for(int j=0; j<DIM; j++){
+                if(field[i][j].equals( " " ))
+                    return true;
+            }
+        }
         return false;
     }
 
