@@ -17,7 +17,7 @@ public class AIController {
     public void generateOpponentPosition( String m[][], String opponent ) {
         for ( int i = 0; i < DIM; i++ ) {
             for ( int j = 0; j < DIM; j++ ) {
-                if ( m[ i ][ j ].equals( "" ) ) {
+                if ( m[ i ][ j ].equals( " " ) ) {
                     m[ i ][ j ] = opponent;
                     return;
                 }

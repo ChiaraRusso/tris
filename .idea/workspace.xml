@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e273bb75-8e3f-40cf-b923-12e83c9d2417" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/tris-core/src/chiara/controller/AIController.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/tris-core/src/chiara/controller/AIController.java" afterPath="$PROJECT_DIR$/tris-core/src/chiara/controller/AIController.java" />
       <change beforePath="$PROJECT_DIR$/tris-core/src/chiara/controller/Controller.java" afterPath="$PROJECT_DIR$/tris-core/src/chiara/controller/Controller.java" />
-      <change beforePath="$PROJECT_DIR$/tris-core/src/chiara/main/MainNoGI.java" afterPath="$PROJECT_DIR$/tris-core/src/chiara/main/MainNoGI.java" />
-      <change beforePath="$PROJECT_DIR$/tris-core/src/chiara/model/Circle.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tris-core/src/chiara/model/Cross.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tris-core/src/chiara/model/Figure.java" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,23 +22,23 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tris-core/src/chiara/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+            <state relative-caret-position="-67">
+              <caret line="43" column="40" lean-forward="false" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
               <folding>
-                <element signature="e#1813#1814#0" expanded="true" />
-                <element signature="e#1840#1841#0" expanded="true" />
-                <element signature="e#1876#1877#0" expanded="true" />
-                <element signature="e#1904#1905#0" expanded="true" />
+                <element signature="e#1820#1821#0" expanded="true" />
+                <element signature="e#1847#1848#0" expanded="true" />
+                <element signature="e#1883#1884#0" expanded="true" />
+                <element signature="e#1911#1912#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AIController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AIController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tris-core/src/chiara/controller/AIController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="293">
+              <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#176#177#0" expanded="true" />
@@ -55,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainNoGI.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainNoGI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tris-core/src/chiara/main/MainNoGI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+            <state relative-caret-position="216">
+              <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,9 +94,9 @@
         <option value="$PROJECT_DIR$/tris-core/src/chiara/model/Circle.java" />
         <option value="$PROJECT_DIR$/tris-core/src/chiara/model/Figure.java" />
         <option value="$PROJECT_DIR$/tris-core/src/chiara/model/Cross.java" />
+        <option value="$PROJECT_DIR$/tris-core/src/chiara/main/MainNoGI.java" />
         <option value="$PROJECT_DIR$/tris-core/src/chiara/controller/Controller.java" />
         <option value="$PROJECT_DIR$/tris-core/src/chiara/controller/AIController.java" />
-        <option value="$PROJECT_DIR$/tris-core/src/chiara/main/MainNoGI.java" />
       </list>
     </option>
   </component>
@@ -111,7 +106,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="563" />
     <option name="y" value="61" />
     <option name="width" value="944" />
@@ -355,12 +350,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539255300392</updated>
-      <workItem from="1539255301730" duration="18179000" />
+      <workItem from="1539255301730" duration="21628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18179000" />
+    <option name="totallyTimeSpent" value="21628000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -372,7 +367,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="27" width="1922" height="1021" extended-state="7" />
+    <frame x="-1" y="27" width="1922" height="1021" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -382,7 +378,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5064034" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32996634" sideWeight="0.49359658" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32996634" sideWeight="0.49359658" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34567901" sideWeight="0.49786553" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5263749" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -438,14 +434,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tris-core/src/chiara/main/MainNoGI.java</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
@@ -561,39 +549,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tris-core/src/chiara/main/MainNoGI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tris-core/src/chiara/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+        <state relative-caret-position="-67">
+          <caret line="43" column="40" lean-forward="false" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
           <folding>
-            <element signature="e#1813#1814#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-            <element signature="e#1876#1877#0" expanded="true" />
-            <element signature="e#1904#1905#0" expanded="true" />
+            <element signature="e#1820#1821#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
+            <element signature="e#1883#1884#0" expanded="true" />
+            <element signature="e#1911#1912#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tris-core/src/chiara/controller/AIController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="293">
+          <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#176#177#0" expanded="true" />
             <element signature="e#242#243#0" expanded="true" />
             <element signature="e#267#268#0" expanded="true" />
             <element signature="e#333#334#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tris-core/src/chiara/main/MainNoGI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

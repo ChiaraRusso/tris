@@ -12,7 +12,7 @@ public class Controller {
 
         for ( int i = 0; i < DIM; i++ ) {
             for ( int j = 0; j < DIM; j++ )
-                field[ i ][ j ] = "";
+                field[ i ][ j ] = " ";
         }
     }
 
@@ -23,7 +23,7 @@ public class Controller {
             for ( int j = 0; j < DIM; j++ ) {
                 if ( i == x ) {
                     if ( j == y ) {
-                        if ( field[ x ][ y ].equals( "" ) ) {
+                        if ( field[ x ][ y ].equals( " " ) ) {
                             field[ x ][ y ] = player;
                         } else
                             System.out.println( "Position is already occupied" );
@@ -37,20 +37,25 @@ public class Controller {
     public void printMatrix() {
 
         System.out.println();
-        System.out.println( "  0   1   2" );
-        System.out.println();
-        System.out.println( "0  " + field[ 0 ][ 0 ] + "  |" + field[ 0 ][ 1 ] + "|" + field[ 0 ][ 2 ] );
-        System.out.println( "  ----------" );
-        System.out.println( "1  " + field[ 1 ][ 0 ] + "  |" + field[ 1 ][ 1 ] + "|" + field[ 1 ][ 2 ] );
-        System.out.println( "  ----------" );
-        System.out.println( "2  " + field[ 2 ][ 0 ] + "  |" + field[ 2 ][ 1 ] + "|" + field[ 2 ][ 2 ] );
-        System.out.println();
+        String fs = String.format(
+                        "\t  %s | %s | %s  \n" +
+                        "\t-------------\n"    +
+                        "\t  %s | %s | %s  \n" +
+                        "\t-------------\n"+
+                        "\t  %s | %s | %s  \n\n",
+                field[ 0 ][ 0 ],field[ 0 ][ 1 ],field[ 0 ][ 2 ],
+                field[ 1 ][ 0 ],field[ 1 ][ 1 ],field[ 1 ][ 2 ],
+                field[ 2 ][ 0 ],field[ 2 ][ 1 ],field[ 2 ][ 2 ]
+        );
+
+        System.out.println(fs);
+
     }
 
     public void printAvailablePositions() {
         for ( int i = 0; i < DIM; i++ ) {
             for ( int j = 0; j < DIM; j++ ) {
-                if ( field[ i ][ j ].equals( "" ) )
+                if ( field[ i ][ j ].equals( " " ) )
                     System.out.println( "(" + i + "-" + j + ")" );
             }
         }
