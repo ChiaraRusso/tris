@@ -1,6 +1,7 @@
 package chiara.main.java.controller;
 
-import static chiara.controller.Controller.DIM;
+
+import static chiara.main.java.controller.Controller.DIM;
 
 public class AIController {
 
