@@ -1,4 +1,4 @@
-package chiara.controller;
+package chiara.main.java.controller;
 
 
 public class Controller {
@@ -40,7 +40,18 @@ public class Controller {
 
         System.out.println();
         String fs = String.format(
-                "\t  %s | %s | %s  \n" +
+                "\t  0   1   2  \n"+
+                "\t0 %s | %s | %s  \n" +
+                        "\t-------------\n" +
+                        "\t1 %s | %s | %s  \n" +
+                        "\t-------------\n" +
+                        "\t2 %s | %s | %s  \n\n",
+                field[ 0 ][ 0 ], field[ 0 ][ 1 ], field[ 0 ][ 2 ],
+                field[ 1 ][ 0 ], field[ 1 ][ 1 ], field[ 1 ][ 2 ],
+                field[ 2 ][ 0 ], field[ 2 ][ 1 ], field[ 2 ][ 2 ]
+        );
+        String fsNoNumb = String.format(
+                        "\t  %s | %s | %s  \n" +
                         "\t-------------\n" +
                         "\t  %s | %s | %s  \n" +
                         "\t-------------\n" +
@@ -50,7 +61,7 @@ public class Controller {
                 field[ 2 ][ 0 ], field[ 2 ][ 1 ], field[ 2 ][ 2 ]
         );
 
-        System.out.println( fs );
+        System.out.println( fsNoNumb );
 
     }
 
@@ -59,7 +70,7 @@ public class Controller {
             for ( int j = 0; j < DIM; j++ ) {
                 if ( field[ i ][ j ].equals( " " ) ) {
                     t.sleep( 500 );
-                    System.out.print( "(" + i + "-" + j + ")" );
+                    System.out.print( " (" + i + "-" + j + ") " );
                 }
             }
             System.out.println();
@@ -115,7 +126,7 @@ public class Controller {
                 }
             }
         }
-        if ( c == 3 )
+        if ( c == DIM )
             return true;
         return false;
     }
@@ -131,12 +142,12 @@ public class Controller {
                 }
             }
         }
-        if ( c == 3 )
+        if ( c == DIM )
             return true;
         return false;
     }
 
-    public Boolean arePositionsAvaliable(){
+    public Boolean arePositionsAvailable(){
         for(int i=0; i<DIM; i++){
             for(int j=0; j<DIM; j++){
                 if(field[i][j].equals( " " ))

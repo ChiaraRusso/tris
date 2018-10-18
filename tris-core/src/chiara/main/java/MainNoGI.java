@@ -1,7 +1,8 @@
-package chiara.main;
+package chiara.main.java;
 
-import chiara.controller.AIController;
-import chiara.controller.Controller;
+
+import chiara.main.java.controller.AIController;
+import chiara.main.java.controller.Controller;
 
 import java.util.Scanner;
 
@@ -57,7 +58,9 @@ public class MainNoGI {
         System.out.println();
         t.sleep( 2000 );
 
-        while ( controller.arePositionsAvaliable() ) {
+        //TODO quando le posizioni libere sono finite, il gioco termina
+
+        while ( controller.arePositionsAvailable() ) {
 
             System.out.println( "Here the positions available: ( X - Y )" );
             System.out.println();
@@ -83,7 +86,6 @@ public class MainNoGI {
                 controller.printMatrix();
 
                 if ( controller.win( player ) ) {
-//                    controller.printMatrix();
                     System.out.println( "Congratulation " + name + ", you won!" );
                     return;
                 }
@@ -99,7 +101,6 @@ public class MainNoGI {
                     y = in.nextInt();
 
                     if ( controller.win( player ) ) {
-//                        controller.printMatrix();
                         System.out.println( "Congratulation " + name + ", you won!" );
                         return;
                     }
@@ -113,7 +114,7 @@ public class MainNoGI {
             System.out.println( "--- opponent's move ---" );
             System.out.println();
             t.sleep( 1500 );
-            aiController.generateOpponentPosition( controller.getField(), opponent );
+            aiController.generateIAPosition( controller.getField(),opponent,player );
             if ( controller.win( opponent ) ) {
                 controller.printMatrix();
                 System.out.println( "Uh-oh.. You lost :(" );
@@ -123,7 +124,6 @@ public class MainNoGI {
         }
 
         System.out.println( "I guess this game ended in a draw!" );
-
     }
 
     public static Boolean checkValidCoordinate( int x ) {
